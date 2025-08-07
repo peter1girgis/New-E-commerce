@@ -1,5 +1,5 @@
 <div>
-    <div class="w-full h-screen bg-gradient-to-r from-blue-200 to-cyan-200 py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <div class="w-full h-screen bg-gradient-to-r  from-blue-200 to-cyan-200 py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Grid -->
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
@@ -29,21 +29,21 @@
                 <svg class="h-4 w-4 text-gray-800 dark:text-gray-200" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor" />
                 </svg>
-                <svg class="h-4 w-4 text-gray-800 dark:text-gray-200" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-4 w-4 text-gray-800 dark:bg-white" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor" />
                 </svg>
-                <svg class="h-4 w-4 text-gray-800 dark:text-gray-200" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-4 w-4 text-gray-800 dark:bg-white" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor" />
                 </svg>
-                <svg class="h-4 w-4 text-gray-800 dark:text-gray-200" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-4 w-4 text-gray-800 dark:bg-white" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor" />
                 </svg>
-                <svg class="h-4 w-4 text-gray-800 dark:text-gray-200" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="h-4 w-4 text-gray-800 dark:bg-white" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor" />
                 </svg>
                 </div>
 
-                <p class="mt-3 text-sm text-gray-800 dark:text-gray-200">
+                <p class="mt-3 text-sm text-gray-800 dark:bg-white">
                 <span class="font-bold">4.6</span> /5 - from 12k reviews
                 </p>
 
@@ -163,20 +163,24 @@
         </div>
     </div>
     <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-0">
+
+
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
 
-        <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <a href="" class="">
-            <img src="https://i.pinimg.com/originals/a0/97/c3/a097c3c89b6d9a14f52f9515395d5220.png" alt="" class="object-cover w-full h-64 rounded-t-lg">
-            </a>
-            <div class="p-5 text-center">
-            <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
-                Apple
-            </a>
+        @foreach ($brands as $brand)
+            <div class="bg-white rounded-lg shadow-md dark:bg-gray-800  hover:-mt-4 hover:mb-4 dark:hover:text-blue-500 cursor-pointer transition-all duration-300 ease-in-out">
+                <a wire:navigate href="/products?selected_brands[0]={{$brand->id}}" class="">
+                <img src="{{url('storage',$brand->image)}}" alt="" class="object-cover w-full h-64 rounded-t-lg">
+                </a>
+                <div class="p-5 text-center dark:hover:text-blue-500">
+                    <a wire:navigate href="/products?selected_brands[0]={{$brand->id}}" class="text-2xl hover:text-blue-600 dark:hover:text-blue-500 font-bold tracking-tight text-gray-900 dark:text-white">
+                        {{$brand->name}}
+                    </a>
+                </div>
             </div>
-        </div>
+        @endforeach
 
-        <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
+        {{-- <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
             <a href="" class="">
             <img src="https://i.pinimg.com/originals/1d/35/83/1d35833251dec0ad373ad7cbbbf4f3e2.png" alt="" class="object-cover w-full h-64 rounded-t-lg">
             </a>
@@ -185,29 +189,7 @@
                 Samsung
             </a>
             </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <a href="" class="">
-            <img src="https://salesindia.com/media/codazon_cache/brand/400x400/wysiwyg/codazon/main-content-22/Brand_logo/ONEPLUS_LOGO_.png" alt="" class="object-cover w-full h-64 rounded-t-lg">
-            </a>
-            <div class="p-5 text-center">
-            <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
-                One Plus
-            </a>
-            </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <a href="" class="">
-            <img src="https://i.pinimg.com/originals/72/15/96/721596edd1de9db231a385d52a9081f8.png" alt="" class="object-cover w-full h-64 rounded-t-lg">
-            </a>
-            <div class="p-5 text-center">
-            <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
-                Xiaomi
-            </a>
-            </div>
-        </div>
+        </div> --}}
 
         </div>
     </div>
@@ -240,27 +222,29 @@
     <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
 
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-            <div class="p-4 md:p-5">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="https://cdn.bajajelectronics.com/product/b002c02c-c379-49f8-b2a6-bd2e56d0e23a" alt="Image Description">
-                <div class="ms-3">
-                    <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                    Laptops
-                    </h3>
+        @foreach ($categories as $category)
+            <a wire:navigate class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600  hover:-mt-4 hover:mb-4 cursor-pointer transition-all duration-300 ease-in-out" href="/products?selected_categories[0]={{$category->id}}">
+                <div class="p-4 md:p-5">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                    <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="{{url('storage',$category->image)}}" alt=" {{$category->name}}">
+                    <div class="ms-3">
+                        <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-blue-500 dark:text-white">
+                        {{$category->name}}
+                        </h3>
+                    </div>
+                    </div>
+                    <div class="ps-3 dark:text-white dark:group-hover:text-blue-500">
+                    <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                    </div>
                 </div>
                 </div>
-                <div class="ps-3">
-                <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6" />
-                </svg>
-                </div>
-            </div>
-            </div>
-        </a>
+            </a>
+        @endforeach
 
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+        {{-- <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
             <div class="p-4 md:p-5">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
@@ -278,47 +262,9 @@
                 </div>
             </div>
             </div>
-        </a>
+        </a> --}}
 
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-            <div class="p-4 md:p-5">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/watch-card-40-ultra2-202309_GEO_IN_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693611639854" alt="Image Description">
-                <div class="ms-3">
-                    <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                    Smartwatches
-                    </h3>
-                </div>
-                </div>
-                <div class="ps-3">
-                <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6" />
-                </svg>
-                </div>
-            </div>
-            </div>
-        </a>
 
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-            <div class="p-4 md:p-5">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1632893007.55719480!400x400!85.png" alt="Image Description">
-                <div class="ms-3">
-                    <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                    Television
-                    </h3>
-                </div>
-                </div>
-                <div class="ps-3">
-                <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6" />
-                </svg>
-                </div>
-            </div>
-            </div>
-        </a>
 
         </div>
     </div>

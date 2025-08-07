@@ -221,7 +221,7 @@ class OrdersRelationManager extends RelationManager
                         ->label('Order Details')
                         ->url(fn(Order $record):string=> OrderResource::getUrl('view',['record' => $record]))
                         ->icon('heroicon-o-eye')
-                        ->color('primary'),
+                        ->color('info'),
                 ])
             ])
             ->bulkActions([

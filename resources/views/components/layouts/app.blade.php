@@ -16,6 +16,9 @@
         </main>
         <livewire:partials.footer />
         @livewireScripts
+        {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+        {{-- @livewireAlertScripts --}}
+
         {{-- <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> --}}
         {{-- <script data-navigate-once>
             document.addEventListener('livewire:navigated', () => {
@@ -24,6 +27,26 @@
                     initFlowbite();
                 }, 100);
             });
+        </script> --}}
+        {{-- <script>
+            const darkToggleBtn = document.getElementById('darkToggle');
+
+            // Apply dark mode based on saved preference or system preference
+            if (localStorage.getItem('theme') === 'dark' ||
+                (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+
+            // Toggle dark mode (if button exists on page)
+            if (darkToggleBtn) {
+                darkToggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    const isDark = document.documentElement.classList.contains('dark');
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                });
+            }
         </script> --}}
     </body>
 </html>

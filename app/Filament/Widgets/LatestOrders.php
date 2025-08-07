@@ -33,6 +33,7 @@ class LatestOrders extends BaseWidget
                     ->tooltip(fn($record) => $record->payment_method)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('payment_status')
+                    ->badge()
                     ->limit(12)
                     ->tooltip(fn($record) => $record->payment_status)
                     ->searchable(),

@@ -98,7 +98,8 @@ class OrderResource extends Resource
                         Forms\Components\TextArea::make('notes')
                             ->label('Order Notes')
                             ->maxLength(500)
-                            ->placeholder('Any special instructions or notes for the order')->columnSpanFull(),
+                            ->placeholder('Any special instructions or notes for the order')->columnSpanFull()
+                            ,
                     ])->columns(2),
                     Forms\Components\Section::make('Order Details')->schema([
                         Forms\Components\Repeater::make('items')
@@ -193,6 +194,7 @@ class OrderResource extends Resource
                 Tables\Columns\TextColumn::make('payment_method')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('payment_status')
+                    ->badge()
                     ->searchable(),
                 Tables\Columns\SelectColumn::make('status')
                     ->options([
@@ -212,7 +214,9 @@ class OrderResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('notes')
                 ->toggleable(isToggledHiddenByDefault: true)
-                    ->searchable(),
+                    ->searchable()
+                    ->limit(15)
+                    ->tooltip(fn($record) => $record->notes),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

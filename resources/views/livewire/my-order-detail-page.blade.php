@@ -1,10 +1,37 @@
     <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     <h1 class="text-4xl font-bold text-slate-500">Order Details</h1>
-
+        @php
+            $status = '';
+            $payment_status = '';
+            if($order->status == 'new'){
+                $status = '<span class="bg-blue-500 py-1 px-3 rounded text-white shadow">New</span>';
+            }
+            if($order->status == 'processing'){
+                $status = '<span class="bg-yellow-500 py-1 px-3 rounded text-white shadow">Processing</span>';
+            }
+            if($order->status == 'shipped'){
+                $status = '<span class="bg-green-500 py-1 px-3 rounded text-white shadow">Shipped</span>';
+            }
+            if($order->status == 'delivered'){
+                $status = '<span class="bg-green-700 py-1 px-3 rounded text-white shadow">Delivered</span>';
+            }
+            if($order->status == 'cancelled'){
+                $status = '<span class="bg-red-500 py-1 px-3 rounded text-white shadow">Cancelled</span>';
+            }
+            if($order->payment_status == 'pending'){
+                $payment_status = '<span class="bg-blue-500 py-1 px-3 rounded text-white shadow">Pending</span>';
+            }
+            if($order->payment_status == 'paid'){
+                $payment_status = '<span class="bg-green-600 py-1 px-3 rounded text-white shadow">Paid</span>';
+            }
+            if($order->payment_status == 'failed'){
+                $payment_status = '<span class="bg-red-600 py-1 px-3 rounded text-white shadow ">Failed</span>';
+            }
+        @endphp
     <!-- Grid -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-5">
         <!-- Card -->
-        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
+        <div class="flex flex-col bg-white  border shadow-sm rounded-xl dark:bg-gray-600 dark:border-gray-800 hover:-mt-4 hover:mb-4 cursor-pointer transition-all duration-300 ease-in-out">
         <div class="p-4 md:p-5 flex gap-x-4">
             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
             <svg class="flex-shrink-0 size-5 text-gray-600 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -17,12 +44,12 @@
 
             <div class="grow">
             <div class="flex items-center gap-x-2">
-                <p class="text-xs uppercase tracking-wide text-gray-500">
+                <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-white">
                 Customer
                 </p>
             </div>
-            <div class="mt-1 flex items-center gap-x-2">
-                <div>Jace Grimes</div>
+            <div class="mt-1 flex items-center gap-x-2 dark:text-white">
+                <div>{{ $address->full_name }}</div>
             </div>
             </div>
         </div>
@@ -30,7 +57,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
+        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-600 dark:border-gray-800 hover:-mt-4 hover:mb-4 cursor-pointer transition-all duration-300 ease-in-out">
         <div class="p-4 md:p-5 flex gap-x-4">
             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
             <svg class="flex-shrink-0 size-5 text-gray-600 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -43,13 +70,14 @@
 
             <div class="grow">
             <div class="flex items-center gap-x-2">
-                <p class="text-xs uppercase tracking-wide text-gray-500">
+                <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-white">
                 Order Date
                 </p>
             </div>
             <div class="mt-1 flex items-center gap-x-2">
-                <h3 class="text-xl font-medium text-gray-800 dark:text-gray-200">
-                17-02-2024
+                <h3 class="text-xl font-medium text-gray-800 dark:text-white">
+                {{-- {{Date('Y-m-d',$order_date)}} --}}
+                    {{ $address->created_at->format('Y-m-d')  }}
                 </h3>
             </div>
             </div>
@@ -58,7 +86,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
+        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-600 dark:border-gray-800 hover:-mt-4 hover:mb-4 cursor-pointer transition-all duration-300 ease-in-out">
         <div class="p-4 md:p-5 flex gap-x-4">
             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
             <svg class="flex-shrink-0 size-5 text-gray-600 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -69,12 +97,12 @@
 
             <div class="grow">
             <div class="flex items-center gap-x-2">
-                <p class="text-xs uppercase tracking-wide text-gray-500">
+                <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-white">
                 Order Status
                 </p>
             </div>
-            <div class="mt-1 flex items-center gap-x-2">
-                <span class="bg-yellow-500 py-1 px-3 rounded text-white shadow">Processing</span>
+            <div class="mt-1 flex items-center gap-x-2 dark:text-white">
+                {!! $status !!}
             </div>
             </div>
         </div>
@@ -82,7 +110,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
+        <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-600 dark:border-gray-800 hover:-mt-4 hover:mb-4 cursor-pointer transition-all duration-300 ease-in-out">
         <div class="p-4 md:p-5 flex gap-x-4">
             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
             <svg class="flex-shrink-0 size-5 text-gray-600 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,12 +123,12 @@
 
             <div class="grow">
             <div class="flex items-center gap-x-2">
-                <p class="text-xs uppercase tracking-wide text-gray-500">
+                <p class="text-xs uppercase tracking-wide text-gray-500 dark:text-white">
                 Payment Status
                 </p>
             </div>
             <div class="mt-1 flex items-center gap-x-2">
-                <span class="bg-green-500 py-1 px-3 rounded text-white shadow">Paid</span>
+                {!! $payment_status !!}
             </div>
             </div>
         </div>
@@ -111,33 +139,37 @@
 
     <div class="flex flex-col md:flex-row gap-4 mt-4">
         <div class="md:w-3/4">
-        <div class="bg-white overflow-x-auto rounded-lg shadow-md p-6 mb-4">
+        <div class="bg-white dark:bg-gray-600 overflow-x-auto rounded-lg shadow-md p-6 mb-4">
             <table class="w-full">
             <thead>
                 <tr>
-                <th class="text-left font-semibold">Product</th>
-                <th class="text-left font-semibold">Price</th>
-                <th class="text-left font-semibold">Quantity</th>
-                <th class="text-left font-semibold">Total</th>
+                <th class="text-left font-semibold dark:text-white">Product</th>
+                <th class="text-left font-semibold dark:text-white">Price</th>
+                <th class="text-left font-semibold dark:text-white">Quantity</th>
+                <th class="text-left font-semibold dark:text-white">Total</th>
                 </tr>
             </thead>
             <tbody>
 
                 <!--[if BLOCK]><![endif]-->
-                <tr wire:key="53">
-                <td class="py-4">
-                    <div class="flex items-center">
-                    <img class="h-16 w-16 mr-4" src="http://localhost:8000/storage/products/01HND3J5XS7ZC5J84BK5YDM6Z2.jpg" alt="Product image">
-                    <span class="font-semibold">Samsung Galaxy Watch6</span>
-                    </div>
-                </td>
-                <td class="py-4">₹29,999.00</td>
-                <td class="py-4">
-                    <span class="text-center w-8">1</span>
-                </td>
-                <td class="py-4">₹29,999.00</td>
-                </tr>
-                <tr wire:key="54">
+                @foreach ($order_items as $item)
+                    <tr wire:key="{{ $item->id }}">
+
+                        <td class="py-4">
+                            <div class="flex items-center">
+                            <img class="h-16 w-16 mr-4" src="{{ url('storage',$item->product->images[0])}}" alt="Product image">
+                            <span class="font-semibold dark:text-white">{{ $item->product->name }}</span>
+                            </div>
+                        </td>
+                        <td class="py-4 dark:text-white">{{ Number::currency($item->unit_amount) }}</td>
+                        <td class="py-4">
+                            <span class="text-center w-8 dark:text-white">{{ $item->quantity}}</span>
+                        </td>
+                        <td class="py-4 dark:text-white">{{ Number::currency($item->total_amount)}}</td>
+                    </tr>
+                @endforeach
+
+                {{-- <tr wire:key="54">
                 <td class="py-4">
                     <div class="flex items-center">
                     <img class="h-16 w-16 mr-4" src="http://localhost:8000/storage/products/01HND30J0P7C6MWQ1XQK7YDQKA.jpg" alt="Product image">
@@ -149,46 +181,46 @@
                     <span class="text-center w-8">5</span>
                 </td>
                 <td class="py-4">₹375,000.00</td>
-                </tr>
+                </tr> --}}
                 <!--[if ENDBLOCK]><![endif]-->
 
             </tbody>
             </table>
         </div>
 
-        <div class="bg-white overflow-x-auto rounded-lg shadow-md p-6 mb-4">
-            <h1 class="font-3xl font-bold text-slate-500 mb-3">Shipping Address</h1>
+        <div class="bg-white dark:bg-gray-600 overflow-x-auto rounded-lg shadow-md p-6 mb-4">
+            <h1 class="font-3xl font-bold text-slate-500 mb-3 dark:text-white">Shipping Address</h1>
             <div class="flex justify-between items-center">
             <div>
-                <p>42227 Zoila Glens, Oshkosh, Michigan, 55928</p>
+                <p class="dark:text-white">{{$address->street_address}}, {{$address->city}}, {{$address->state}} , {{$address->zip_code}}</p>
             </div>
             <div>
-                <p class="font-semibold">Phone:</p>
-                <p>023-509-0009</p>
+                <p class="font-semibold dark:text-white">Phone:</p>
+                <p class="dark:text-white">{{$address->phone}}</p>
             </div>
             </div>
         </div>
 
         </div>
         <div class="md:w-1/4">
-        <div class="bg-white rounded-lg shadow-md p-6">
-            <h2 class="text-lg font-semibold mb-4">Summary</h2>
+        <div class="bg-white dark:bg-gray-600 rounded-lg shadow-md p-6">
+            <h2 class="text-lg font-semibold mb-4 dark:text-white">Summary</h2>
             <div class="flex justify-between mb-2">
-            <span>Subtotal</span>
-            <span>₹404,999.00</span>
+            <span class="dark:text-white">Subtotal</span>
+            <span class="dark:text-white">{{Number::currency($order->grand_total)}}</span>
             </div>
             <div class="flex justify-between mb-2">
-            <span>Taxes</span>
-            <span>₹0.00</span>
+            <span class="dark:text-white">Taxes</span>
+            <span class="dark:text-white">{{Number::currency(0)}}</span>
             </div>
             <div class="flex justify-between mb-2">
-            <span>Shipping</span>
-            <span>₹0.00</span>
+            <span class="dark:text-white">Shipping</span>
+            <span class="dark:text-white">{{Number::currency(0)}}</span>
             </div>
             <hr class="my-2">
             <div class="flex justify-between mb-2">
-            <span class="font-semibold">Grand Total</span>
-            <span class="font-semibold">₹404,999.00</span>
+            <span class="font-semibold dark:text-white">Grand Total</span>
+            <span class="font-semibold dark:text-white">{{Number::currency($order->grand_total)}}</span>
             </div>
 
         </div>

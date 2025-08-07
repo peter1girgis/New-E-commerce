@@ -108,13 +108,37 @@ class ProductResource extends Resource
                     ->money()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_active')
-                    ->boolean(),
+                    ->boolean()
+                    ->action(function($record,$column){
+                        $name = $column->getName();
+                        $record->update([
+                            $name => !$record->$name
+                        ]);
+                    }),
                 Tables\Columns\IconColumn::make('is_featured')
-                    ->boolean(),
+                    ->boolean()
+                    ->action(function($record,$column){
+                        $name = $column->getName();
+                        $record->update([
+                            $name => !$record->$name
+                        ]);
+                    }),
                 Tables\Columns\IconColumn::make('in_stock')
-                    ->boolean(),
+                    ->boolean()
+                    ->action(function($record,$column){
+                        $name = $column->getName();
+                        $record->update([
+                            $name => !$record->$name
+                        ]);
+                    }),
                 Tables\Columns\IconColumn::make('on_sale')
-                    ->boolean(),
+                    ->boolean()
+                    ->action(function($record,$column){
+                        $name = $column->getName();
+                        $record->update([
+                            $name => !$record->$name
+                        ]);
+                    }),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
